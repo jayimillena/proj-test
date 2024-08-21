@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/* General styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -51,6 +51,72 @@ main, #projects, #about {
     padding: 0 1rem;
 }
 
+/* Project section styles */
+#projects {
+    background: #fff;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Padding for the project card container */
+.project-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 1rem; /* Add padding inside the card */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Padding for the project thumbnail */
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem; /* Add margin below the thumbnail */
+}
+
+/* Padding for the project content */
+.project-content {
+    padding: 1rem; /* Add padding inside the content area */
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem; /* Remove margin above the title and add space below */
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    margin: 0 0 1rem; /* Remove margin above the paragraph and add space below */
+    font-size: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 1rem; /* Add padding inside the link */
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+    background: #555;
+}
+
 /* Style the footer */
 footer {
     background: #333;
@@ -62,19 +128,8 @@ footer {
     bottom: 0;
 }
 
-/* Add responsive design */
+/* Responsive design */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
-        margin: 0.5rem 0;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .container {
-        width: 95%;
-        padding: 0;
-    }
-}
+        margin: 0.
